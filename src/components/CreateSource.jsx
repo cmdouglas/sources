@@ -30,7 +30,7 @@ export default class CreateSource extends React.Component
                     type="text"
                     name="publication_name"
                     defaultValue={this.props.source.publication_name}
-                    onBlur={this.props.updateSource}
+                    onChange={this.props.updateSource}
                 />
             </td>
             <td className="input">
@@ -38,7 +38,7 @@ export default class CreateSource extends React.Component
                     type="text"
                     name="title"
                     defaultValue={this.props.source.title}
-                    onBlur={this.props.updateSource}
+                    onChange={this.props.updateSource}
                 />
             </td>
             <td className="input">
@@ -54,7 +54,7 @@ export default class CreateSource extends React.Component
                     type="text"
                     name="url"
                     defaultValue={this.props.source.url}
-                    onBlur={this.props.updateSource}
+                    onChange={this.props.updateSource}
                 />
             </td>
             <td className="actions">
