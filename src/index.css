@@ -1,0 +1,39 @@
+@import "~react-datepicker/dist/react-datepicker.css";
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+td
+{
+  height: 2.5em;
+}
+td.index {
+  width:2em;
+}
+
+td.input {
+  width:15em;
+}
+
+input {
+  width:14em;
+}
+
+pre {
+  margin-top:20px;
+  padding:10px;
+  border: 1px solid gray;
+  background: #efefef;
+}

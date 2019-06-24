@@ -1,0 +1,6 @@
+Function that will turn a list of source objects into html string
+Component to create a source object
+List of source creation components
+optional: drag and drop reordering
+Component to show rendered html string
+Styling
