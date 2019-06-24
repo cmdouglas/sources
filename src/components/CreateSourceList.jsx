@@ -1,31 +1,36 @@
 import React from 'react';
 import CreateSource from './CreateSource';
 
-export default class CreateSourceList extends React.Component
-{
-    render()
-    {
-        return <table>
-            <thead>
-            <tr>
-                <th> </th>
-                <th>
-                    Publication
-                </th>
-                <th>
-                    Title
-                </th>
-                <th>
-                    Date
-                </th>
-                <th>
-                    URL
-                </th>
-                <th>
+export default class CreateSourceList extends React.Component {
+    render() {
+        let header = (<thead>
+        <tr>
+            <th></th>
+            <th>
+                Publication
+            </th>
+            <th>
+                Title
+            </th>
+            <th>
+                Date
+            </th>
+            <th>
+                URL
+            </th>
+            <th>
 
-                </th>
-            </tr>
-            </thead>
+            </th>
+        </tr>
+        </thead>);
+
+        if (this.props.sources.length === 0)
+        {
+            header = null;
+        }
+
+        return <table>
+            {header}
             <tbody>
             {this.props.sources.map((source, index) =>
                 <CreateSource
@@ -38,9 +43,11 @@ export default class CreateSourceList extends React.Component
                 />
             )}
             <tr>
-                <td> </td>
-                <td><button onClick={this.props.createSource}>Add a source</button></td>
-                <td colSpan="3"> </td>
+                <td></td>
+                <td>
+                    <button onClick={this.props.createSource}>Add a source</button>
+                </td>
+                <td colSpan="3"></td>
             </tr>
             </tbody>
         </table>
