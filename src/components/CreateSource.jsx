@@ -31,6 +31,7 @@ export default class CreateSource extends React.Component
                     name="publication_name"
                     defaultValue={this.props.source.publication_name}
                     onChange={this.props.updateSource}
+                    placeholder="Publication"
                 />
             </td>
             <td className="input">
@@ -39,6 +40,7 @@ export default class CreateSource extends React.Component
                     name="title"
                     defaultValue={this.props.source.title}
                     onChange={this.props.updateSource}
+                    placeholder="Title"
                 />
             </td>
             <td className="input">
@@ -55,6 +57,7 @@ export default class CreateSource extends React.Component
                     name="url"
                     defaultValue={this.props.source.url}
                     onChange={this.props.updateSource}
+                    placeholder="http://www.example.com"
                 />
             </td>
             <td className="actions">

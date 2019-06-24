@@ -4,10 +4,10 @@ const rootReducer = (sources=[], action) => {
     switch (action.type) {
         case CREATE_SORUCE: {
             const new_source = {
-                publication_name: "Publication",
-                title: "Title",
+                publication_name: "",
+                title: "",
                 date: new Date(),
-                url: "http://example.com"
+                url: ""
             };
             return [
                 ...sources,
